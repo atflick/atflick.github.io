@@ -1,0 +1,59 @@
+.contact-header {
+  background: linear-gradient(
+        rgba(31, 255, 221, 0.4),
+        rgba(250, 250, 250, 0.2)
+      ),
+    url("../images/contact-bg.jpg") no-repeat fixed top;
+  // background-size: auto 80% ;
+  @media (min-width: $screen-xs-min) {
+    background: linear-gradient(
+          rgba(31, 180, 255, 0.4),
+          rgba(250, 250, 250, 0.6)
+        ),url("../images/contact-bg.jpg") no-repeat fixed center 120%;
+  }
+}
+
+.contact-form {
+  height: 400px;
+  width: 100%;
+
+  h5 {
+    background: white;
+    bottom: -10px;
+    display: inline-block;
+    margin: -10px 0 0 5px;
+    padding: 0 5px 0 3px;
+    position: relative;
+    text-align: left;
+    // width: 50px;
+  }
+}
+
+.contact-col {
+  display: block;
+  text-align: left;
+  width: 100%;
+  @media (min-width: $screen-xs-min) {
+    float: left;
+    width: 50%;
+    // margin-right: 2%;
+  }
+}
+
+
+#name, #email, #phone, #message {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+#message {
+  height: 140px;
+}
+
+#submit {
+  width: 100%;
+}
+
+#name:focus, #email:focus, #phone:focus, #message:focus {
+  outline: none;
+}

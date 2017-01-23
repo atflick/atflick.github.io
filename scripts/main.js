@@ -75,7 +75,7 @@ var faderOne  = new Waypoint({
   offset: '75%'
 });
 
-var faderOne  = new Waypoint({
+var faderTwo  = new Waypoint({
   element: document.getElementById('fade-two'),
   handler: function(direction) {
     if (direction === 'down') {

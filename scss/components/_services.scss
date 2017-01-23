@@ -1,0 +1,51 @@
+.services-header {
+  background: linear-gradient(
+          rgba(0, 119, 255, 0.4),
+          rgba(240, 240, 240, 0.3)
+        ),
+        url("../images/services-bg.jpg") no-repeat fixed;
+  background-size: auto 300px;
+  @media (min-width: $screen-xs-min) {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.service-container {
+  height: 180px;
+  background-color: $light-gray;
+  border: 0px solid black;
+  margin: 0 auto;
+  width: 180px;
+  img {
+    @include vertical-mid;
+    width: 70%;
+  }
+}
+
+.services-body {
+  h3 {
+    width: auto;
+    background: white;
+  }
+  hr {
+    border-top: 2px solid $dark-blue;
+    position: relative;
+    top: -45px;
+    z-index: -1;
+  }
+  ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+  li {
+    font-size: $norm;
+    list-style: square;
+    text-decoration: none;
+  }
+}
+// .paralax {
+//   background: url("../../images/treefence.jpg") no-repeat fixed bottom;
+//   height: 400px;
+//   width: 100%;
+// }

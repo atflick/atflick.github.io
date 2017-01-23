@@ -1,28 +1,16 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andy Flickinger</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Andy Flickinger's web development portfolio site">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andy Flickinger - Web Developer</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="css/main.css">
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-
-  </head>
+</head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
     <nav>
       <div class="center-container">
@@ -42,7 +30,7 @@
     <header class="services-header" id="header-img">
       <h1 id="header-content"><span class="pg-header">Services</span></h1>
       <div class="arrow-border">
-        <div class="arrow"></div>
+        <div class="arrow" id="home-tag"></div>
       </div>
     </header>
 
@@ -50,7 +38,7 @@
       <div class="container-fluid center-container" id="fade-one">
         <div class="row center">
           <div class="col-xs-12 col-sm-4">
-            <div class="circle-container">
+            <div class="service-container">
               <img src="images/puzzlepiece.png">
             </div>
             <h3>Strategy</h3>
@@ -61,7 +49,7 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="circle-container">
+            <div class="service-container">
               <img src="images/pencil.png">
             </div>
             <h3>Design</h3>
@@ -72,7 +60,7 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="circle-container">
+            <div class="service-container">
               <img src="images/codebox.png">
             </div>
             <h3>Development</h3>
@@ -92,26 +80,12 @@
         <h4>2016 All Rights Reserved.</h4>
       </div>
     </footer>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:js scripts/main.js -->
+    <!-- Plugins not scripted by me -->
+        <script src="scripts/jquery/dist/jquery.js"></script>
+        <script src="scripts/waypoints/lib/noframework.waypoints.js"></script>
+    <!-- end plugins -->
     <script src="scripts/main.js"></script>
     <script src="scripts/services.js"></script>
-    <!-- endbuild -->
+
   </body>
 </html>
