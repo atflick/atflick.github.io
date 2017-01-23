@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andy Flickinger</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <nav>
+      <div class="center-container">
+        <a href="index.html"><img src="images/top-logo.png" class="top-logo"></a>
+        <span class="glyphicon glyphicon-menu-hamburger" id="menu-toggle"></span>
+        <div class="nav-items">
+          <ul>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="portfolio.html">portfolio</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="contact-header" id="header-img">
+      <h1 id="header-content">Contact</h1>
+      <div class="arrow-border">
+        <div class="arrow"></div>
+      </div>
+    </header>
+
+    <section class="white-section">
+      <div class="center-container">
+        <div class="contact-form">
+          <form align="center" action="contact-form.php" method="POST" onsubmit="return validateForm();">
+            <div class="contact-col">
+              <h5>Name</h5>
+              <input type="text" name="name" placeholder="Name" id="name">
+              <span id="name_validation" class="error"></span>
+              <h5>Email</h5>
+              <input type="text" name="email" placeholder="Email" id="email">
+              <span id="email_validation" class="error"></span>
+              <h5>Phone</h5>
+              <input type="text" name="phone" placeholder="Phone" id="phone">
+            </div>
+            <div class="contact-col">
+              <h5>Message</h5>
+              <textarea name="message" placeholder="Message" id="message"></textarea>
+              <span id="message_validation" class="error"></span>
+              <input type="submit" name="Submit" value="Submit" id="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="vertical-mid center">
+        <h4>Designed and coded by Andy Flickinger.</h4>
+        <h4>2016 All Rights Reserved.</h4>
+      </div>
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/waypoints/lib/noframework.waypoints.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/services.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

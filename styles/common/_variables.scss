@@ -1,0 +1,39 @@
+// Colors
+$dark-blue:               #29377c;
+$light-blue:              #3d7cfd;
+
+// Grayscale
+$darkest-gray:            #1b1b19;
+$dark-gray:               #5d5d56;
+$medium-gray:             #a4a49d;
+$gray:                    #ccc;
+$light-gray:              #ebebeb;
+$lightest-gray:           #f8f8f8;
+$true-white:              #fff;
+
+// Font scale
+$xxxsmall:                8px;
+$xxsmall:                 10px;
+$xsmall:                  12px;
+$small:                   14px;
+$norm:                    16px; // base-font-size
+$med:                     18px;
+$large:                   20px;
+$larger:                  24px;
+$xlarge:                  28px;
+$xxlarge:                 32px;
+$xxxlarge:                36px;
+$xxxxlarge:               42px;
+$xxxxxlarge:              48px;
+$xxxxxxlarge:             54px;
+$gigantic:                60px;
+$humongous:               66px;
+$extreme:                 72px;
+$absurd:                  96px;
+
+// Screen sizes
+$screen-xxs-min:          380px  !default;
+$screen-xs-min:           480px  !default;
+$screen-sm-min:           768px  !default;
+$screen-md-min:           992px  !default;
+$screen-lg-min:           1200px !default;

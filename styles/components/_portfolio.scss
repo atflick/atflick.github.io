@@ -1,0 +1,44 @@
+.portfolio-header {
+  background: linear-gradient(
+      rgba(255, 195, 31, 0.4),
+      rgba(240, 240, 240, 0.3)
+      ),
+    url("../../images/construction.jpg") no-repeat fixed;
+  background-size: auto 300px;
+  @media (min-width: $screen-xs-min) {
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.project-box {
+  background: url("../../images/dots2.png");
+  height: 200px;
+  margin: 0 auto;
+  padding: 10px 0 0 10px;
+  position: relative;
+  overflow: hidden;
+  width: 225px;
+}
+
+.project-img {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.project-overlay {
+  background: $gray;
+  height: 100%;
+  left: 0;
+  opacity: .8;
+  position: absolute;
+  top: 0;
+  transition: opacity .2s ease-in-out;
+  width: 100%;
+}
+
+.project-overlay:hover {
+  opacity: 0;
+}

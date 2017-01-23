@@ -1,0 +1,19 @@
+@mixin vertical-mid() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.vertical-mid {
+  @include vertical-mid;
+}
+
+@mixin vertical-bot() {
+  position: relative;
+  top: 95%;
+  -webkit-transform: translateY(-95%);
+  -ms-transform: translateY(-95%);
+  transform: translateY(-95%);
+}
