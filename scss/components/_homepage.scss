@@ -1,12 +1,12 @@
 .home-header {
   margin-top: 50px;
-  background: url("../images/pano-bg1-sm.jpg") no-repeat fixed bottom;
+  background: url("../images/bgs/pano-bg1-sm.jpg") no-repeat fixed bottom;
   background-size: auto 100%;
   height: 300px;
   text-align: center;
   z-index: 0;
   @media (min-width: $screen-xs-min) {
-    background: url("../images/pano-bg1.jpg") no-repeat fixed center;
+    background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed center;
     height: 600px;
     margin-top: 80px;
   }

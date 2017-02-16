@@ -1,15 +1,17 @@
 .contact-header {
   background: linear-gradient(
-        rgba(31, 255, 221, 0.4),
-        rgba(250, 250, 250, 0.2)
+        rgba(31, 180, 255, 0.4),
+        rgba(250, 250, 250, 0.6)
       ),
-    url("../images/contact-bg.jpg") no-repeat fixed top;
-  // background-size: auto 80% ;
+    url("../images/bgs/contact-bg-sm.jpg") no-repeat fixed right top;
+  background-size: 130%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
           rgba(31, 180, 255, 0.4),
           rgba(250, 250, 250, 0.6)
-        ),url("../images/contact-bg.jpg") no-repeat fixed center 120%;
+        ),
+    url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed bottom;
+    background-size: cover;
   }
 }
 

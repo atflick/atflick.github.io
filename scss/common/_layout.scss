@@ -1,0 +1,33 @@
+.flex-container {
+  width: 100%;
+  padding: 0 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: $screen-xs-min) {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.flex-cell-2 {
+  width: 100%
+  @media (min-width: $screen-xs-min) {
+    width: 49%
+  }
+}
+
+.flex-cell-3 {
+  width: 100%
+  @media (min-width: $screen-xs-min) {
+    width: 32%
+  }
+}
+
+.flex-cell-4 {
+  width: 100%
+  @media (min-width: $screen-xs-min) {
+    width: 24%
+  }
+}

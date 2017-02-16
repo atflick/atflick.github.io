@@ -3,14 +3,13 @@
         rgba(57, 153, 198, 0.4),
         rgba(240, 240, 240, 0.3)
       ),
-    url("../images/path2.jpg") no-repeat fixed top;
+    url("../images/bgs/about-bg-sm.jpg") no-repeat fixed top;
   background-size: 130%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
-          rgba(57, 198, 64, 0.3),
-          rgba(30, 30, 30, 0.3)
-        ),url("../images/path.png") no-repeat fixed center;
-    height: 400px;
+          rgba(57, 198, 64, 0.2),
+          rgba(30, 30, 30, 0.2)
+        ),url("../images/bgs/about-bg-lg.jpg") no-repeat fixed center;
   }
 }
 

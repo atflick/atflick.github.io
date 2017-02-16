@@ -3,10 +3,14 @@
           rgba(0, 119, 255, 0.4),
           rgba(240, 240, 240, 0.3)
         ),
-        url("../images/services-bg.jpg") no-repeat fixed;
-  background-size: auto 300px;
+        url("../images/bgs/services-bg-sm.jpg") no-repeat fixed;
+  background-size: auto;
   @media (min-width: $screen-xs-min) {
-    background-position: center;
+    background: linear-gradient(
+            rgba(0, 119, 255, 0.4),
+            rgba(240, 240, 240, 0.3)
+          ),
+          url("../images/bgs/services-bg-lg.jpg") no-repeat fixed center;
     background-size: cover;
   }
 }
