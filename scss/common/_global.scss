@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: 'Cuprum-Regular';
 }
@@ -20,7 +24,11 @@ a {
 // Font Styles//
 
 h1 {
-  margin: 0;
+  font-size: $xxxlarge;
+  margin: 8px 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $xxxxlarge;
+  }
 }
 
 h2 {
@@ -29,6 +37,30 @@ h2 {
   margin: 0;
   @media (min-width: $screen-xs-min) {
   font-size: $xxxlarge;
+  }
+}
+
+h3 {
+  font-size: $xlarge;
+  margin: 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $xxlarge;
+  }
+}
+
+h4 {
+  font-size: $larger;
+  margin: 5px 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $large;
+  }
+}
+
+h5 {
+  font-size: $large;
+  margin: 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $med;
   }
 }
 
@@ -134,7 +166,7 @@ footer {
   color: white;
   height: 300px;
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 
 // Random

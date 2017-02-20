@@ -15,34 +15,121 @@
   }
 }
 
-.project-box {
-  background: url("../images/dots2.png");
-  height: 200px;
-  margin: 0 auto;
-  padding: 10px 0 0 10px;
+.project-container {
   position: relative;
-  overflow: hidden;
-  width: 225px;
+  border: 1px solid $dark-blue;
+  width: 100%;
+  height: 275px;
+  // border-bottom: 3px solid $dark-blue;
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  margin-bottom: 20px;
+  @media (min-width: $screen-xs-min) {
+    margin-bottom: 50px;
+  }
+  h3 {
+    color: #FFF;
+    background: $dark-blue;
+    margin: 0;
+    padding: 15px;
+    height: 60px;
+    font-size: $larger;
+  }
 }
 
-.project-img {
-  background-size: cover;
-  background-position: center;
-  height: 100%;
+
+
+.project-box {
+  position: relative;
+  height: 210px;
   width: 100%;
+}
+.project-info {
+  left: 0px;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  height: 15px;
+  text-align: center;
+  transition: ease-in-out height 1s;
+  // border-bottom: 1px solid $dark-blue;
+  // border-right: 1px solid $dark-blue;
+  // border-left: 1px solid $dark-blue;
 }
 
 .project-overlay {
-  background: $gray;
-  height: 100%;
-  left: 0;
-  opacity: .8;
   position: absolute;
-  top: 0;
-  transition: opacity .2s ease-in-out;
+  left: 0px;
   width: 100%;
+  background: rgba(200,200,200, .5);
+  height: 210px;
+  cursor: pointer;
+  transition: ease-in-out all .3s;
 }
 
 .project-overlay:hover {
   opacity: 0;
+}
+
+.arrow-tab {
+  background: #FFF;
+  display:inline-block;
+  color: $dark-blue;
+  padding: 2px;
+  height: 20px;
+  width: 20px;
+  top: -10px;
+  position: relative;
+  transform: rotate(45deg);
+  cursor: pointer;
+  border-bottom-right: 0px solid black;
+  border-bottom-right-radius: 50%;
+}
+
+.proj-arrow {
+  position: absolute;
+  transform: rotate(-45deg);
+  top: -10px;
+  left: 1px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: ease-in-out all .3s;
+}
+
+.arrow-flip {
+  transition: ease-in-out all .3s;
+  transform: rotate(135deg);
+}
+
+.open {
+  height: 210px;
+  transition: ease-in-out height 1s;
+}
+
+
+// Portfolio backgrounds
+
+.hangman {
+  background: url("../images/portfolio-images/hangman.png") center no-repeat;
+  background-size: cover;
+}
+
+.concentration {
+  background: url("../images/portfolio-images/concentration.png") center no-repeat;
+  background-size: cover;
+}
+
+.incoder {
+  background: url("../images/portfolio-images/incode.png") center no-repeat;
+  background-size: cover;
+}
+
+.pizza {
+  background: url("../images/portfolio-images/randomza.png") center no-repeat;
+  background-size: cover;
+}
+
+.movie-quotes {
+  background: url("../images/portfolio-images/quote.png") center no-repeat;
+  background-size: cover;
 }
