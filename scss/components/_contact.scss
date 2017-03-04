@@ -4,14 +4,14 @@
         rgba(250, 250, 250, 0.6)
       ),
     url("../images/bgs/contact-bg-sm.jpg") no-repeat fixed right top;
-  background-size: 130%;
+  background-size: 135%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
           rgba(31, 180, 255, 0.4),
           rgba(250, 250, 250, 0.6)
         ),
-    url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed bottom;
-    background-size: cover;
+    url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed top;
+    background-size: 115%;
   }
 }
 
@@ -29,31 +29,45 @@
     text-align: left;
     // width: 50px;
   }
+
+  input {
+    margin-bottom: 17px;
+  }
 }
 
 .contact-col {
-  display: block;
-  text-align: left;
-  width: 100%;
-  @media (min-width: $screen-xs-min) {
-    float: left;
-    width: 50%;
-    // margin-right: 2%;
-  }
+  height: 225px;
 }
 
 
 #name, #email, #phone, #message {
   padding: 10px 5px;
   width: 100%;
+  border: 1px solid $dark-blue;
 }
 
 #message {
-  height: 140px;
+  height: 200px;
 }
 
 #submit {
+  border: 1px solid $dark-blue;
+  background: $dark-blue;
   width: 100%;
+  cursor: pointer;
+  color: #FFF;
+  font-size: $large;
+  margin: 50px auto 10px auto;
+  width: 100%;
+  padding: 5px;
+  @media (min-width: $screen-xs-min) {
+  font-size: $med;
+  width: 200px;
+  }
+}
+
+#submit:hover {
+  background: $light-blue;
 }
 
 #name:focus, #email:focus, #phone:focus, #message:focus {

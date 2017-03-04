@@ -16,13 +16,24 @@
 }
 
 .service-container {
-  height: 180px;
-  background-color: $light-gray;
-  border: 0px solid black;
-  margin: 0 auto;
-  width: 180px;
-  img {
-    @include vertical-mid;
+  padding: 0 15%;
+  margin-bottom: 30px;
+  @media (min-width: $screen-xs-min) {
+    padding: 0 1%;
+  }
+  div {
+    text-align: center;
+    padding: 20px 0;
+    background-color: $light-gray;
+    border: 0px solid black;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    @media (min-width: $screen-xs-min) {
+      margin-bottom: 20px;
+    }
+  }
+  div img {
+    // @include vertical-mid;
     width: 70%;
   }
 }
@@ -31,6 +42,7 @@
   h3 {
     width: auto;
     background: white;
+    margin-bottom: 12px;
   }
   hr {
     border-top: 2px solid $dark-blue;

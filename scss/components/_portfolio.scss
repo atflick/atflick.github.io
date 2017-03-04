@@ -20,6 +20,7 @@
   border: 1px solid $dark-blue;
   width: 100%;
   height: 275px;
+  overflow: hidden;
   // border-bottom: 3px solid $dark-blue;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
   margin-bottom: 20px;
@@ -34,14 +35,22 @@
     height: 60px;
     font-size: $larger;
   }
+  a {
+    color: #fff;
+  }
 }
 
+.opacity-1 {
+  opacity: 1 !important;
+  transition: all ease 1s;
+}
 
 
 .project-box {
   position: relative;
   height: 210px;
   width: 100%;
+
 }
 .project-info {
   left: 0px;
@@ -52,6 +61,17 @@
   height: 15px;
   text-align: center;
   transition: ease-in-out height 1s;
+
+  p {
+    margin-top: -20px;
+    padding: 0 8px;
+    text-align: left;
+    opacity: 0;
+    transition: all ease 1s;
+    a {
+      color: $light-blue;
+    }
+  }
   // border-bottom: 1px solid $dark-blue;
   // border-right: 1px solid $dark-blue;
   // border-left: 1px solid $dark-blue;
@@ -108,6 +128,11 @@
 
 
 // Portfolio backgrounds
+
+.pet-care {
+  background: url("../images/portfolio-images/pet-care-share.png") center no-repeat;
+  background-size: cover;
+}
 
 .hangman {
   background: url("../images/portfolio-images/hangman.png") center no-repeat;

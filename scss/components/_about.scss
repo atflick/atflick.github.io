@@ -1,10 +1,10 @@
 .about-header {
   background: linear-gradient(
-        rgba(57, 153, 198, 0.4),
-        rgba(240, 240, 240, 0.3)
+        rgba(57, 198, 64, 0.2),
+        rgba(30, 30, 30, 0.2)
       ),
     url("../images/bgs/about-bg-sm.jpg") no-repeat fixed top;
-  background-size: 130%;
+  background-size: 135%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
           rgba(57, 198, 64, 0.2),
@@ -14,7 +14,7 @@
 }
 
 .about-img {
-  height: 300px;
+  height: 305px;
   position: relative;
   z-index: 3;
   img {
@@ -61,6 +61,12 @@
   background: white;
   height: 350px;
   padding-top: 75px;
+  >h2 {
+    margin-bottom: 10px;
+  }
+  >p {
+    margin-bottom: 7px;
+  }
   @media (min-width: $screen-xs-min) {
     height: 500px;
     padding-top: 150px;

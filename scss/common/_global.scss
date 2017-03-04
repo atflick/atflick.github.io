@@ -64,6 +64,14 @@ h5 {
   }
 }
 
+p {
+  font-size: $norm;
+  margin: 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $norm;
+  }
+}
+
 .capitol-gray {
   color: $medium-gray;
   text-transform: uppercase;
@@ -202,7 +210,7 @@ footer {
 
 .arrow-border {
   position: relative;
-  top: 99%;
+  top: 90%;
   -webkit-transform: translateY(-95%);
   -ms-transform: translateY(-95%);
   transform: translateY(-95%);
@@ -212,6 +220,9 @@ footer {
   margin: 0 auto;
   width: 55px;
   animation: 6s blink infinite;
+  @media (min-width: $screen-xs-min) {
+    top: 99%;
+  }
 }
 
 .arrow {

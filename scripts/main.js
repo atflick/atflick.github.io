@@ -5,22 +5,6 @@ $(document).ready(function(){
 
 // Menu Dropdown //
 
-// $('#menu-toggle').click(function() {
-//   if ($('.nav-items').hasClass('open-nav')) {
-//         $('.nav-items').removeClass('open-nav').slideUp('slow');
-//     }
-//   else {
-//       $('.nav-items').addClass('open-nav').slideDown('slow');
-//     }
-// });
-//
-// $('.nav-items a').click(function() {
-//     if ($('.nav-items').hasClass('open-nav')) {
-//         // $('.link-container').removeClass('open-nav').slideUp('slow');
-//         $('.nav-items').removeClass('open-nav').slideUp('slow');
-//     }
-// });
-
 $('#menu-toggle').click(function() {
   $('.nav-items').toggleClass('open-nav')
 });
@@ -29,6 +13,8 @@ $('#menu-toggle').click(function() {
 $(".project-info").click(function(){
   $(this).toggleClass("open");
   $(this).find(".proj-arrow").toggleClass("arrow-flip");
+  console.log(this);
+  $(this).find("p").toggleClass("opacity-1");
 });
 
 // Logo cover on scroll

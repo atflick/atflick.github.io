@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html>
+  <head>
+  <title>inCoder - The simple text encoder</title>
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/remodal.css">
+  <link rel="stylesheet" href="css/remodal-default-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://use.fontawesome.com/177c7bc5cc.js"></script>
+  </head>
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/remodal.js"></script>
+  <body>
+    <div class="remodal-bg">
+      <div class="position">
+        <section class="main-container">
+          <h1>inCoder</h1>
+          <div class="form-container">
+            <div class="left-col">
+              <div class="readable-side">
+                <textarea name="readable" class="text-box" id="readable" placeholder="Enter text to be encoded"></textarea>
+              </div>
+            </div>
+            <div class="middle-col">
+              <div class="center-controls">
+                <button id="encode" onclick="encodeThis()">Encode <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                <p>Key</p>
+                <input type="number" name="key" min="1" max="999" id="key" placeholder="00">
+                <button id="decode" onclick="decodeThis()"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Decode</button>
+                <div id="info-icon"><a href="#modal"><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i></a></div>
+              </div>
+            </div>
+            <div class="right-col">
+              <div class="encrypted-side">
+                <textarea type="text" name="encrypted" class="text-box" id="encoded" placeholder="Enter text to be decoded"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="remodal modal-style" data-remodal-id="modal">
+        <h1>What is this?</h1>
+        <p>inCoder is a very simple text encoding tool created using HTML, CSS and Javascript.  Enter the text you would like to encode in the left text area, set your key, then click encode.  You can then send the encoded text to someone with the key and they can use this same tool to decode your message.</p>
+        <br>
+        <button data-remodal-action="confirm">OK</button>
+      </div>
+    </div> 
+  <div id="particles-js"></div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+<!--     <script src="js/jquery.knob.js"></script> -->
+  <script src="js/main.js"></script>
+  </body>
+</html>
