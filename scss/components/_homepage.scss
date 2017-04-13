@@ -1,18 +1,21 @@
 .home-header {
   margin-top: 50px;
-  background: url("../images/bgs/pano-bg1-sm.jpg") no-repeat fixed bottom;
-  background-size: auto 100%;
+  background: url("../images/bgs/pano-bg1-sm.jpg") no-repeat fixed top;
+  background-size: cover;
   height: 300px;
   text-align: center;
   z-index: 0;
   @media (min-width: $screen-xs-min) {
-    background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed center;
+    background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed top;
     height: 600px;
     margin-top: 80px;
+    background-size: cover;
   }
   @media (min-width: $screen-sm-min) {
+    background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed center;
     margin-top: 100px;
     padding-top: 25px;
+    background-size: cover;
   }
 }
 
@@ -30,4 +33,17 @@
     max-width: 145px;
     margin-bottom: 25px;
   }
+}
+
+.headshot {
+  width: 100%;
+  @media (min-width: $screen-sm-min) {
+    width: auto;
+  }
+}
+
+.skillz {
+  opacity: 0;
+  float: left;
+  width: 50%;
 }

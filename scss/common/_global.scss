@@ -7,9 +7,14 @@ body {
 }
 
 .center-container {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative;
+  @media (min-width: $screen-lg-min) {
+    max-width: 1080px;
+    // width: 70%;
+    margin: 0 auto;
+  }
 }
 
 .full-container {
@@ -27,7 +32,7 @@ h1 {
   font-size: $xxxlarge;
   margin: 8px 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $xxxxlarge;
+    font-size: $xxxxlarge;
   }
 }
 
@@ -36,7 +41,7 @@ h2 {
   font-size: $xxlarge;
   margin: 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $xxxlarge;
+    font-size: $xxxlarge;
   }
 }
 
@@ -44,7 +49,7 @@ h3 {
   font-size: $xlarge;
   margin: 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $xxlarge;
+    font-size: $xxlarge;
   }
 }
 
@@ -52,7 +57,7 @@ h4 {
   font-size: $larger;
   margin: 5px 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $large;
+    font-size: $large;
   }
 }
 
@@ -60,7 +65,7 @@ h5 {
   font-size: $large;
   margin: 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $med;
+    font-size: $med;
   }
 }
 
@@ -68,7 +73,7 @@ p {
   font-size: $norm;
   margin: 0;
   @media (min-width: $screen-xs-min) {
-  font-size: $norm;
+    font-size: $norm;
   }
 }
 
@@ -111,11 +116,11 @@ p {
 // Layout
 .white-section {
   background-color: white;
-  padding: 10px 5px;
+  padding: 10px 8px;
   position: relative;
   z-index: 1;
   @media (min-width: $screen-xs-min) {
-  padding: 50px 0;
+    padding: 50px 0;
   }
 }
 
@@ -143,6 +148,17 @@ header {
     text-shadow: 1px 1px 5px gray;
     @media (min-width: $screen-xs-min) {
       font-size: $xxxxxxlarge;
+    }
+  }
+  > h2 {
+    color: white;
+    font-size: $xxxlarge;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 5px gray;
+    @media (min-width: $screen-xs-min) {
+      font-size: $xxxxxlarge;
     }
   }
 }
@@ -175,6 +191,36 @@ footer {
   height: 300px;
   position: relative;
   z-index: 1;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  ul {
+    height: 60px;
+    li {
+      height: 40px;
+      margin: 20px 10px;
+      display: inline;
+      a {
+        line-height: 80px;
+        color: #fff;
+        font-size: $xxxlarge;
+      }
+      a:hover {
+        color: $yella;
+      }
+      a:focus {
+        color: #fff;
+      }
+    }
+
+    list-style-type: none;
+  }
+  img {
+    height: 90px;
+  }
 }
 
 // Random

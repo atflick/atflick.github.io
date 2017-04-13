@@ -3023,9 +3023,13 @@ body {
   font-family: 'Cuprum-Regular'; }
 
 .center-container {
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
   position: relative; }
+  @media (min-width: 1500px) {
+    .center-container {
+      max-width: 1080px;
+      margin: 0 auto; } }
 
 .full-container {
   width: 100%; }
@@ -3105,7 +3109,7 @@ p {
 
 .white-section {
   background-color: white;
-  padding: 10px 5px;
+  padding: 10px 8px;
   position: relative;
   z-index: 1; }
   @media (min-width: 480px) {
@@ -3137,6 +3141,16 @@ header {
     @media (min-width: 480px) {
       header h1 {
         font-size: 54px; } }
+  header > h2 {
+    color: white;
+    font-size: 36px;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 5px gray; }
+    @media (min-width: 480px) {
+      header > h2 {
+        font-size: 48px; } }
 
 .center-res-right {
   text-align: center; }
@@ -3161,7 +3175,29 @@ footer {
   color: white;
   height: 300px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  footer ul {
+    height: 60px;
+    list-style-type: none; }
+    footer ul li {
+      height: 40px;
+      margin: 20px 10px;
+      display: inline; }
+      footer ul li a {
+        line-height: 80px;
+        color: #fff;
+        font-size: 36px; }
+      footer ul li a:hover {
+        color: #cfff66; }
+      footer ul li a:focus {
+        color: #fff; }
+  footer img {
+    height: 90px; }
 
 #header-img, #header-content {
   opacity: 0; }
@@ -3222,11 +3258,11 @@ footer {
   100% {
     opacity: 1; } }
 @font-face {
-  font-family: 'Cuprum-Regular';
-  src: url("../fonts/cuprum-regular.ttf") format("truetype"); }
+  font-family: "Cuprum-Regular";
+  src: url("../fonts/cuprum-regular-webfont.woff2") format("woff2"), url("../fonts/cuprum-regular-webfont.woff") format("woff"), url("../fonts/cuprum-regular.ttf") format("truetype"); }
 @font-face {
-  font-family: 'Cuprum-Bold';
-  src: url("../fonts/cuprum-bold.ttf") format("truetype"); }
+  font-family: "Cuprum-Bold";
+  src: url("../fonts/cuprum-bold-webfont.woff2") format("woff2"), url("../fonts/cuprum-bold-webfont.woff") format("woff"), url("../fonts/cuprum-bold.ttf") format("truetype"); }
 .flex-container {
   width: 100%;
   padding: 0 5px;
@@ -3249,7 +3285,7 @@ footer {
   width: 100%; }
   @media (min-width: 480px) {
     .flex-cell-1-3 {
-      width: 32%; } }
+      width: 31%; } }
 
 .flex-cell-2-3 {
   width: 100%; }
@@ -3414,20 +3450,23 @@ nav {
 
 .home-header {
   margin-top: 50px;
-  background: url("../images/bgs/pano-bg1-sm.jpg") no-repeat fixed bottom;
-  background-size: auto 100%;
+  background: url("../images/bgs/pano-bg1-sm.jpg") no-repeat fixed top;
+  background-size: cover;
   height: 300px;
   text-align: center;
   z-index: 0; }
   @media (min-width: 480px) {
     .home-header {
-      background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed center;
+      background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed top;
       height: 600px;
-      margin-top: 80px; } }
+      margin-top: 80px;
+      background-size: cover; } }
   @media (min-width: 768px) {
     .home-header {
+      background: url("../images/bgs/pano-bg1.jpg") no-repeat fixed center;
       margin-top: 100px;
-      padding-top: 25px; } }
+      padding-top: 25px;
+      background-size: cover; } }
 
 .homepage-header {
   position: relative;
@@ -3445,9 +3484,20 @@ nav {
     max-width: 145px;
     margin-bottom: 25px; }
 
+.headshot {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .headshot {
+      width: auto; } }
+
+.skillz {
+  opacity: 0;
+  float: left;
+  width: 50%; }
+
 .about-header {
   background: linear-gradient(rgba(57, 198, 64, 0.2), rgba(30, 30, 30, 0.2)), url("../images/bgs/about-bg-sm.jpg") no-repeat fixed top;
-  background-size: 135%; }
+  background-size: 165%; }
   @media (min-width: 480px) {
     .about-header {
       background: linear-gradient(rgba(57, 198, 64, 0.2), rgba(30, 30, 30, 0.2)), url("../images/bgs/about-bg-lg.jpg") no-repeat fixed center; } }
@@ -3490,13 +3540,14 @@ nav {
 
 .blurb-box {
   background: white;
-  height: 350px;
-  padding-top: 75px; }
+  height: auto;
+  padding: 75px 8px 0 8px; }
   .blurb-box > h2 {
+    line-height: 40px;
     margin-bottom: 10px; }
   .blurb-box > p {
     margin-bottom: 7px; }
-  @media (min-width: 480px) {
+  @media (min-width: 768px) {
     .blurb-box {
       height: 500px;
       padding-top: 150px; } }
@@ -3644,6 +3695,14 @@ nav {
   height: 210px;
   transition: ease-in-out height 1s; }
 
+.touchstone {
+  background: url("../images/portfolio-images/touchstone.png") center no-repeat;
+  background-size: cover; }
+
+.travel-buddy {
+  background: url("../images/portfolio-images/travelbud.png") center no-repeat;
+  background-size: cover; }
+
 .pet-care {
   background: url("../images/portfolio-images/pet-care-share.png") center no-repeat;
   background-size: cover; }
@@ -3670,15 +3729,17 @@ nav {
 
 .contact-header {
   background: linear-gradient(rgba(31, 180, 255, 0.4), rgba(250, 250, 250, 0.6)), url("../images/bgs/contact-bg-sm.jpg") no-repeat fixed right top;
-  background-size: 135%; }
+  background-size: 185%; }
   @media (min-width: 480px) {
     .contact-header {
-      background: linear-gradient(rgba(31, 180, 255, 0.4), rgba(250, 250, 250, 0.6)), url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed top;
-      background-size: 115%; } }
+      background: linear-gradient(rgba(31, 180, 255, 0.4), rgba(250, 250, 250, 0.6)), url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed bottom;
+      background-size: auto; } }
 
 .contact-form {
-  height: 400px;
   width: 100%; }
+  @media (min-width: 480px) {
+    .contact-form {
+      height: 400px; } }
   .contact-form h5 {
     background: white;
     bottom: -10px;

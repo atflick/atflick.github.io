@@ -4,7 +4,7 @@
         rgba(30, 30, 30, 0.2)
       ),
     url("../images/bgs/about-bg-sm.jpg") no-repeat fixed top;
-  background-size: 135%;
+  background-size: 165%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
           rgba(57, 198, 64, 0.2),
@@ -59,15 +59,17 @@
 
 .blurb-box {
   background: white;
-  height: 350px;
-  padding-top: 75px;
+  height: auto;
+  padding: 75px 8px 0 8px;
+
   >h2 {
+    line-height: 40px;
     margin-bottom: 10px;
   }
   >p {
     margin-bottom: 7px;
   }
-  @media (min-width: $screen-xs-min) {
+  @media (min-width: $screen-sm-min) {
     height: 500px;
     padding-top: 150px;
   }

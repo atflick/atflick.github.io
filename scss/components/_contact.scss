@@ -4,20 +4,22 @@
         rgba(250, 250, 250, 0.6)
       ),
     url("../images/bgs/contact-bg-sm.jpg") no-repeat fixed right top;
-  background-size: 135%;
+  background-size: 185%;
   @media (min-width: $screen-xs-min) {
     background: linear-gradient(
           rgba(31, 180, 255, 0.4),
           rgba(250, 250, 250, 0.6)
         ),
-    url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed top;
-    background-size: 115%;
+    url("../images/bgs/contact-bg-lg.jpg") no-repeat fixed bottom;
+    background-size: auto;
   }
 }
 
 .contact-form {
-  height: 400px;
   width: 100%;
+  @media (min-width: $screen-xs-min) {
+  height: 400px;
+  }
 
   h5 {
     background: white;
